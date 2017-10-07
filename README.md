@@ -3,12 +3,19 @@ PROJECT TITLE: porth
 -RESTful API Gateway harness repo using nodejs and expressjs.
 
 PURPOSE OF PROJECT: To create an API Gateway with the following features:
+
 -basic GET api request response proxy with middleware to handle 404 and 500 errors: done
+
 -api request response with JSON datatype: underway
+
 -basic auth: tbd
+
 -basic monitoring: tbd
+
 -api optimized for different clients: tbd
+
 -aggregate and fan api requests: tbd
+
 
 AUTHORS: Krish Krishnamurti
 
