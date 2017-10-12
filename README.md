@@ -1,25 +1,33 @@
 
 PROJECT TITLE: porth
--RESTful API Gateway harness repo using nodejs and expressjs.
-
-PURPOSE OF PROJECT: To create an API Gateway with the following features:
-
--basic GET api request response proxy with middleware to handle 404 and 500 errors: done
-
--api request response with JSON datatype: underway
-
--basic auth: tbd
-
--basic monitoring: tbd
-
--api optimized for different clients: tbd
-
--aggregate and fan api requests: tbd
-
 
 AUTHORS: Krish Krishnamurti
 
+PURPOSE OF PROJECT: To create an API Gateway stub generator / test harness for fullstack prototyping.
+
+FEATURES:repo using nodejs, expressjs and JAX-RS annotation
+
+1. basic GET API request response proxy: done
+
+2. basic middleware to handle 404 e.g. invalid request, and 500 errors: done
+
+3. JAX-RS annotated stub generator for GET API request response with JSON datatype: underway
+
+	- auth: tbd
+
+	- monitoring: tbd
+
+	- optimized for different clients: tbd
+
+4. aggregate and fan API requests for microservices: tbd
+
+5. Hardening
+
 USER INSTRUCTIONS:
+
+====
+
+Features 1 and 2:
 To install and run porth (this API Gateway).
 
 Install porth:
@@ -37,4 +45,6 @@ Run porth:
 1. $ node porth.js
 2. To run test client enter "http://localhost:3000" in your browser
 3. To stop porth use Ctrl+c
+
+====
 
