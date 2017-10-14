@@ -1,23 +1,21 @@
 
-// using http server and express application server modules
-var http = require('http');
+// using express application server module
 var express = require('express');
 var porth = express();
 
-// middleware to handle API GET request
-porth.get('/path', function (req, res) {
-  console.log('GET request received');
-  res.send(" 200 Got your GET request!");
-  console.log('GET response sent back!');
-});
+// using porth testAPIService module
+var testAPIService = require ('./testAPIService.js');
+
+// attach URL/testroute to testAPIService
+porth.use('/testroute', testAPIService);
 
 // middleware to handle static files
 porth.use(express.static(__dirname));
 
 // middleware to handle 404
-porth.use(function (req, res) {
+porth.use('*', function (req, res) {
   console.log('Random API request received');
-  res.send(' 404 Please use valid path!');
+  res.send(' 404 Invalid URL!');
 });
 
 // middleware to handle 500 errors
