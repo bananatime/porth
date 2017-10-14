@@ -51,7 +51,7 @@ Run porth:
 2. To run test client enter "http://localhost:3000" in your browser. This will call an API URL/testroute request.
 3. To stop porth use Ctrl+c
 
-To deploy porthjs on cloud change "porth.listen(3000);" in porth.js file to "porth.listen(3000, <host name>);"
+To deploy porthjs on cloud change "porth.listen(3000);" in porth.js file to "porth.listen(3000, host name);"
 
 ====
 
