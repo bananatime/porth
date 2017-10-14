@@ -3,8 +3,8 @@ window.onload = function () {
 
 document.write("Test Client calling porth REST API Gateway!" + "<br>" + "<br>");
 
-// "path" is a valid route that the testing server is expecting
-var url = document.URL + "path"; 
+// "testroute" is a valid route that the testing server is expecting
+var url = document.URL + "testroute"; 
 
 document.write("Calling a GET API." + "<br>");
 
