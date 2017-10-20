@@ -3,7 +3,7 @@ PROJECT TITLE: porth
 
 AUTHOR: Krish Krishnamurti
 
-PURPOSE OF PROJECT: To create an API Gateway stub generator / test harness for fullstack prototyping.
+PURPOSE OF PROJECT: To create an API Gateway stub generator / test harness for design & prototyping.
 
 FEATURES:repo using nodejs, expressjs and JAX-RS annotation
 
@@ -11,7 +11,7 @@ FEATURES:repo using nodejs, expressjs and JAX-RS annotation
 
 2. basic middleware to handle 404 e.g. invalid request, and 500 errors: done
 
-3. JAX-RS annotated stub generator for GET API request response with JSON datatype: underway
+3. OpenAPI spec (Swagger) annotated stub generator for GET API request response with JSON datatype: underway
 
 	- server side stub generator: tbd
 	
@@ -51,7 +51,7 @@ Run porth:
 2. To run test client enter "http://localhost:3000" in your browser. This will call an API URL/testroute request.
 3. To stop porth use Ctrl+c
 
-To deploy porthjs on cloud change "porth.listen(3000);" in porth.js file to "porth.listen(3000, host name);"
+To deploy porthjs on cloud change "porth.listen(3000);" in porth.js file to "porth.listen(3000, yourcloudhostname);"
 
 ====
 
